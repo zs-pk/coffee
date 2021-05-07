@@ -49,7 +49,7 @@ a{text-decoration:none;}
             //画出蛇
             for (var i = 0; i < snakes.length; i++){
                 c.beginPath();
-                c.fillStyle = "green";
+                c.fillStyle = "blue";
                 c.fillRect(snakes[i].x, snakes[i].y, BLOCK_SIZE, BLOCK_SIZE);
                 c.moveTo(snakes[i].x, snakes[i].y);
                 c.lineTo(snakes[i].x + BLOCK_SIZE, snakes[i].y);
@@ -179,7 +179,7 @@ a{text-decoration:none;}
             <div id="mark">得分：<span id="mark_con"></span></div>
             <div id="helper">
                 <table>
-                    <tr>
+                    /*<tr>
                         <td></td>
                         <td><button onclick="keydown(38);">上</button></td>
                         <td></td>
@@ -194,6 +194,7 @@ a{text-decoration:none;}
                         <td><button onclick="keydown(40);">下</button></td>
                         <td></td>
                     </tr>
+			*/
                 </table><a href="index.html">再玩一次</a>
             </div>
         </div>
